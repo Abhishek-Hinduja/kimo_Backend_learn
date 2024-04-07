@@ -41,6 +41,27 @@ app.post("/", function(req,res){
     }
 })
 
+app.put("/ingredient/:ingredientId", function(req,res){
+    var text = req.body.text
+    var id = req.params.ingredientId
+    console.log(id)
+    console.log(text)
+
+    if (!id || !text){
+        res.status(500).error({error:"You must provide text"})
+    }
+    else{
+        for (var i = 0; i<ingredients.length; i++){
+            if (ingredients[i].id == id){
+                ingredients[i].text = text
+                console.log("till done")
+                break
+            }
+        }
+        res.send(ingredients)
+    }
+})
+
 
 app.listen(port,(req,res)=>{
     console.log(`Server is listening on ${port}`)

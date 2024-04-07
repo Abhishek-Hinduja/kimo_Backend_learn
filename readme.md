@@ -9,3 +9,9 @@
 
 ### what is app.use(express.urlencode({extended:true}))
 ## It states it will allow all type of data if extended is true
+
+### What is the use of put operation?
+## It is used to update the existing text with new text
+
+### What are url paramater and how to access url parameters?
+## Url parameter are present in the url and can be accessed using req.param.(id)
