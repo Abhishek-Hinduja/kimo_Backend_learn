@@ -15,3 +15,9 @@
 
 ### What are url paramater and how to access url parameters?
 ## Url parameter are present in the url and can be accessed using req.param.(id)
+
+### What is Mongoose?
+## Mongoose is an open Source library. It is a object modelling tool for mongodb it helps to connect node with mongodb. We will create models to define how the data will be store there
+
+### What is Schema?
+## It is like Creating the blueprint for the data to be stored
